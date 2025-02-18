@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+          *{
+            margin: 0;
+            padding: 0; 
+            border: none;
+            box-sizing: border-box;       
+          }
+          .top{
+                    width: 100%;
+                    height: 60px;
+                    background-color: black;
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    position: fixed;
+                    top: 0;
+          }
+          .topm{
+                    width: 150px;
+          }
+          .sal{
+                    width: 45px;
+                    height: 40px;
+                    border-radius: 6px;
+                    margin-right: 8px;
+                    margin-left:10px ;
+          }
+          .left{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+          }
+          .right{
+                    display: flex;
+                    align-items: center;
+                    font-size: 23px;
+                    gap: 10px;
+          }
+          .search{
+                    margin-left: 1050px;
+                    margin-right: 5px;
+          }
+          .main{
+                    width: 100vw;
+                    height: 100vh;
+                    background-color: black;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: baseline;
+                    overflow: scroll;
+          }
+          .text{
+                    color: white;
+                    margin-top: 20px;
+                    font-size: 25px;
+                    margin-left: 25px;
+          }
+          .C{
+            margin-top: 80px;
+            position: relative;
+            left: 20px;
+          }
+          .T{
+            margin-top: 80px;
+            position: relative;
+            left: 20px;
+            bottom: px;
+          }
+          .one{
+            width: 100%;
+            height: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-top: 20px;
+          }
+          .two{
+            width: 100%;
+            height: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-top: 20px;
+          }
+          .box{
+                    min-width: 220px;
+                    min-height: 320px;
+                    margin: 20px;
+                    background-color: white;
+                    border-radius: 15px;
+                    box-shadow: 5px 7px 20px rgba(182, 176, 176, 0.507);
+                    display: flex;
+                    justify-content: end;
+                    align-items: end;
+
+          }
+          .p{
+                    background-image: url(pushpa.png);
+                    background-size: cover;
+                    background-position: -15px;
+          }
+          .s{
+                    background-image: url(salaar.png);
+                    background-size: cover;
+                    background-position: -10px;
+          }
+          .d{
+                    background-image: url(devara.png);
+                    background-size: cover;
+          }
+          .g{
+                    background-image: url(game.png);
+                    background-size: cover;
+          }
+          .bone{
+                    width: 100px;
+                 background-color: red;
+                 color: white;
+                 padding: 10px;
+                 border-radius: 5px; 
+                 font-size: 15px;
+                 box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.757);  
+                 cursor: pointer;
+                 margin: 15px;
+          }
+          .bone:hover{
+                    background-color:black;
+                    color: red;
+          }
+          @media (max-width:1040px){
+            .main{
+              overflow: scroll;
+            }
+            .one{
+              flex-direction: column;
+              align-items:center;
+              overflow-y: scroll;
+            }
+            .two{
+              flex-direction: column;
+              align-items: center;
+              overflow-y: scroll;
+              margin-bottom: 60px;
+            }
+            .box{
+              background-position: -15px +150px;
+            }
+            .d{
+              background-position: 0px +150px;
+            }
+            }
+    </style>
+  </head>
+  <body>
+          <div class="main">
+          <div class="top">
+                    <div class="left">
+                              <img src="netfli.png" class="topm" alt="">
+                    <p>Browser</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="right">
+                              <i class="fa-solid fa-magnifying-glass search"></i>
+                    <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <img src="sal.png" class="sal" alt="">
+                    <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <h1 class="text C">Continue Watching :-</h1>
+          <div class="one">
+                    
+                    <div class="box s">
+                              <button class="bone">Resume</button>
+                    </div>
+                    <div class="box p"> <button class="bone">Resume</button></div>
+                    <div class="box d">
+                              <button class="bone">Resume</button>
+                    </div>
+                    <div class="box g">
+                              <button class="bone">Resume</button>
+                    </div>
+          </div>
+          <h1 class="text T">Top 4 in india :- </h1>
+          <div class="two">
+                    <div class="box p">
+                              <button class="bone">Play</button>
+                    </div>
+                    <div class="box s">
+                              <button class="bone">Play</button>
+                    </div>
+                    <div class="box d">
+                              <button class="bone">Play</button>
+                    </div>
+                    <div class="box g">
+                              <button class="bone">Play</button>
+                    </div>
+          </div>
+</div>
+  </body>
+</html>
